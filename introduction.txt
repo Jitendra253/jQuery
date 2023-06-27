@@ -1,0 +1,10 @@
+Q.what is jQuery?
+1.jQuery is a Javascript Library
+2.Write Less do more
+3.jQuery greatly simplifies Javascript programing
+4.The purpose of jQuery is to make easier to use javascript on your website.
+5.jQuery takes a lot of common tasks that require many lines of Javascript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+Q.Purpose of jQuery?
+1.simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation , and Ajax
+2.jQuery will run exactly the same in all major browers.(browser compatibility)

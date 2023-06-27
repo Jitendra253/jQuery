@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <Script src="code.jquery.com_jquery-3.7.0.min.js"></Script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="pra">this is a p tag</p>
+    <button id="btn1">Button1</button>
+    <button id="btn2">Button2</button>
+    <br />
+    <br />
+    <div id="colored-div" style="background-color: rgb(87, 165, 42); height: 100px; width: 100px">
+        <p>This is a p tag</p>
+        <a href="https://www.google.com" id="link" class="red">LINK</a>
+    </div>
+    <input type="text" id="input1">
+    <script>
+        $(function () {
+            //fetch on click of button it only fetch only text and remove html 
+            // $("#btn1").click(function () {
+            //     let txt = $("#colored-div").text()
+            //     alert(txt)
+            // })
+
+            // to get html 
+            // $("#btn1").click(function () {
+            //     let txt = $("#colored-div").html()
+            //     alert(txt)
+            // })
+
+            //Replace or set new element 
+            // $("#btn1").click(function () {
+            //     $("#colored-div").html("<h1>This is  header </h1>")
+            // })
+
+            //get value from form 
+            // $("#btn1").click(function () {
+            //     var value = $("#input1").val();
+            //     alert(value)
+            // })
+
+            //get  attribute
+            // $("#btn1").click(function () {
+            //     let value = $("#link").attr("href") //we can also fetch class of id
+            //     alert(value)
+            // })
+
+            // //set  attribute
+            // $("#btn1").click(function () {
+            //     let value = $("#link").attr("class", "black")
+            // })
+
+            //set multiple attribute
+            // $("#btn1").click(function () {
+            //     $("#link").attr({
+            //         "class": "black",
+            //         "href": "https://www.yahoo.com"
+            //     })
+            // })
+
+
+
+        })
+
+    </script>
+</body>
+
+</html>

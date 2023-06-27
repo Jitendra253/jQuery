@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script src="code.jquery.com_jquery-3.7.0.min.js"></Script>
+</head>
+
+<body>
+    <ul id="list"><!-- (grand parent) -->
+        <li> <!--   (parent) -->
+            <span id="span1">Item1</span> <!--(child)-->
+        </li>
+        <li> <!--(parent) -->
+            <span id="span2">Item2</span><!--(child i)-->
+        </li>
+    </ul>
+
+    <!--*for siblings -->
+
+    <ul id="list">
+        <li>child 1</li>
+        <li>child 2</li>
+        <li id="item1">child 3</li>
+        <li>child 4</li>
+        <li ">child 5</li>
+        <li id=" item2">child 6</li>
+    </ul>
+    <script>
+        $(document).ready(function () {
+            //*select parent
+            // let elm = $("#span1").parent();  //select parent of span1
+            // let elm = $("#span1").parents(); //select all parents
+            // let elm = $("#span1").parentsUntil("body") //stop till ul we can also use id and class selectors as css
+            // elm.css("border", "2px solid red")
+
+            // *select child
+            // let elm = $("#list").children(); //select direct child select only li element
+            // elm.css("border", " 1px solid red")
+
+            //* find 
+            // let elm = $("#list").find("#span2");
+            // elm.css("border", "5px solid green")
+
+            // *Siblings
+            // let elm = $("#item1").siblings() //it will not select item1 and select all siblings
+            // elm.css("border", "1px solid red")
+
+            // nest siblings
+            // let elm = $("#item1").next() //select next element to the item1
+            // elm.css("border", "2px solid red")
+            // let elm = $("#item1").next().next() //select next to next element
+            // elm.css("border", "2px solid green")
+            // let elm = $("#item1").nextAll(); //select all next element
+            // elm.css("border", "2px solid red")
+            // let elm = $("#item1").nextUntil("#item2"); //select all element until item2
+            // elm.css("border", "1px solid blue")
+
+            // similarly there are also methods like prev() prevAll() etc...
+        })
+    </script>
+</body>
+
+</html>

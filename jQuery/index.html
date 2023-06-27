@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <Script src="code.jquery.com_jquery-3.7.0.min.js"></Script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="pra">this is a p tag</p>
+    <button id="btn1">Button1</button>
+    <button id="btn2">Button2</button>
+    <br />
+    <br />
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px"></div>
+    <script>
+        //*Select element
+        //then work on that selected element
+        // $(selector).action() // jQuery syntax
+        // $("pra").hide();   //jQuery Example
+
+        //*selector in jQuery.
+        // $("p").hide() //select tag and hide it
+        // $("#btn1").hide() //select id and hide it we can also select on the basic of class selector
+        // $("p.black").hide() //select add p tag that have black class
+        //$("this").hide() // works on current selected element.
+
+        //*Events in jQuery //
+        // $("#btn1").click(function () {
+        //     $("#pra").hide();
+        // })
+        //hide this element on click
+        // $("#btn1").click(function () {
+        //     $(this).hide();
+        // })
+        //double cllick
+        // $("#btn1").dblclick(function () {
+        //     $(this).hide();
+        // })
+        //Mouse enter and mouse leave
+        // $("#colored-div").mouseenter(function () {
+        //     $("#pra").hide()
+        // })
+        // $("#colored-div").mouseleave(function () {
+        //     $("#pra").show()
+        // })
+        //combination of mouseenter and mouseleave in hover;
+        //   $("#colored-div").hover(
+        //     function () {
+        //       $("#pra").hide();
+        //     },
+        //     function () {
+        //       $("#pra").show();
+        //     }
+        //   );
+        //on function ,select once and add multiple events .
+        // $("#colored-div").on({
+        //     click: function () {
+        //         $(this).css("background-color", "red")
+        //     },
+        //     mouseenter: function () {
+        //         $(this).css("background-color", "blue")
+        //     },
+        //     mouseleave: function () {
+        //         $(this).css("background-color", "yellow")
+        //     }
+        // });
+
+    </script>
+</body>
+
+</html>

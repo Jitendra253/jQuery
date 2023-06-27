@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!--* before -->
+    <ul id="list"> <!--select this id-->
+        <!-- ? prepend -->
+        <li>red</li>
+        <li>green</li>
+        <li>black</li>
+        <!--? append -->
+    </ul>
+    <!--* after -->
+
+    <script>
+        $(function () {
+            //Add element in 4 positions
+            // $("#list").append("<li>yellow</li>")
+            // $("#list").prepend("<li>yellow</li>")
+            // $("#list").after("<p>After Element</p>")
+            // $("#list").before("<p>Before Element</p>")
+
+            //remove element or empty element
+            // $("#list").empty() //children of ul will removed
+            // $("#list").remove() //remove ul from dom
+
+        })
+    </script>
+</body>
+
+</html>

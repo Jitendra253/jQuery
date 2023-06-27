@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script src="code.jquery.com_jquery-3.7.0.min.js"></Script>
+
+</head>
+
+<body>
+    <!-- ?No conflict means how two things can not conflict
+        ? If we using other framework with jQuery and there are also use $ symbol then they conflict
+    -->
+
+    <p id="pra">This is a p tag</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+        $.noConflict();  //By writing this jQuery give "$" to other plugin and say you use it then we write jQuery instead of this "$" symbol
+        jQuery(document).ready(function () {
+            jQuery("#btn").click(
+                function () {
+                    jQuery("#pra").text("Text changed")
+                }
+            )
+        })
+    </script>
+</body>
+
+</html>

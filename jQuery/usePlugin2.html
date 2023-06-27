@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script src="code.jquery.com_jquery-3.7.0.min.js"></Script>
+    <link rel="stylesheet" href="ThirdParty/magnify-image-hover/css/jquery.jqZoom.css">
+    <script src="ThirdParty/magnify-image-hover/js/jquery.jqZoom.js"></script>
+</head>
+
+<body>
+    <div class="zoom-box">
+        <img src="https://help.rangeme.com/hc/article_attachments/360006928633/what_makes_a_good_product_image.jpg"
+            width="200" height="150" border="5px solid blue" />
+    </div>
+    <script>
+        $(function () {
+            $("img").jqZoom({
+                selectorWidth: 50,
+                selectorHeight: 50,
+                viewerWidth: 500,
+                viewerHeight: 500
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <Script src="code.jquery.com_jquery-3.7.0.min.js"></Script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="pra">this is a p tag</p>
+    <button id="btn1">Button1</button>
+    <button id="btn2">Button2</button>
+    <br />
+    <br />
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px"></div>
+    <script>
+
+        $(function () {
+            //hide and show
+            // $("#btn1").click(function () {
+            //     $("#colored-div").hide(1000)
+            // })
+            // $("#btn2").click(function () {
+            //     $("#colored-div").show(5000)
+            // })
+
+
+            //fade
+            // $("#btn").click(function () {
+            //     $("#colored-div").fadeIn(1000)
+            // })
+            // $("#btn2").click(function () {
+            //     $("#colored-div").fadeOut(3000)
+            // })
+
+            //fade toggle
+            // $("#btn1").click(function () {
+            //     $("#colored-div").fadeToggle(1000)
+            // })
+
+            //fadeTo
+            // $("#btn1").click(function () {
+            //     $("#colored-div").fadeTo(1000, 0.5)  //in second parameter we give opacity
+            // })
+
+            //sliding effect
+            // $("#btn1").click(function () {
+            //     $("#colored-div").slideUp(1000)
+            // })                                  
+
+            // $("#btn2").click(function () {
+            //     $("#colored-div").slideDown(1000)
+            // })
+
+            // $("#btn1").click(function () {
+            //     $("#colored-div").slideToggle(1000)
+            // })
+
+            //Animation
+            // $("#btn1").click(function () {
+            //     $("#colored-div").animate({
+            //         opacity: '0.5',
+            //         height: '200px',
+            //     }, 5000)
+            // })
+            // $("#btn2").click(function () {
+            //     $("#colored-div").stop()
+            // })
+
+            //callback
+            // $("#btn2").click(function () {
+            //     $("#colored-div").hide(3000, function () {
+            //         alert("div hidden");
+            //     });
+            // })
+
+            //chaining means apply multiple effect in one element 
+            $("#btn1").click(function () {
+                $("#colored-div").css('background-color', 'blue').slideUp(2000)
+            })
+
+        })
+    </script>
+</body>
+
+</html>
